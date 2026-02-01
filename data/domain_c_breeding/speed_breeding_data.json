@@ -1,0 +1,110 @@
+{
+  "baseline_gens_per_year": {
+    "min": 2,
+    "max": 3,
+    "source": "Watson et al. 2018"
+  },
+  "records": [
+    {
+      "crop": "wheat",
+      "method": "controlled environment speed breeding",
+      "gens_per_year": 6,
+      "cycle_length_days": 60.83,
+      "speedup_vs_baseline": {
+        "min": 2.0,
+        "max": 3.0
+      },
+      "source": "Watson et al. 2018",
+      "doi": "10.1038/s41477-017-0083-8"
+    },
+    {
+      "crop": "wheat",
+      "method": "embryo culture + optimized environment",
+      "gens_per_year": 8,
+      "cycle_length_days": 45.63,
+      "speedup_vs_baseline": {
+        "min": 2.67,
+        "max": 4.0
+      },
+      "source": "Zheng et al. 2013",
+      "doi": "10.1007/s10681-013-0909-z"
+    },
+    {
+      "crop": "barley",
+      "method": "controlled environment speed breeding",
+      "gens_per_year": 6,
+      "cycle_length_days": 60.83,
+      "speedup_vs_baseline": {
+        "min": 2.0,
+        "max": 3.0
+      },
+      "source": "Watson et al. 2018",
+      "doi": "10.1038/s41477-017-0083-8"
+    },
+    {
+      "crop": "barley",
+      "method": "embryo culture + optimized environment",
+      "gens_per_year": 9,
+      "cycle_length_days": 40.56,
+      "speedup_vs_baseline": {
+        "min": 3.0,
+        "max": 4.5
+      },
+      "source": "Zheng et al. 2013",
+      "doi": "10.1007/s10681-013-0909-z"
+    },
+    {
+      "crop": "chickpea",
+      "method": "controlled environment speed breeding",
+      "gens_per_year": 6,
+      "cycle_length_days": 60.83,
+      "speedup_vs_baseline": {
+        "min": 2.0,
+        "max": 3.0
+      },
+      "source": "Watson et al. 2018",
+      "doi": "10.1038/s41477-017-0083-8"
+    },
+    {
+      "crop": "pea",
+      "method": "controlled environment speed breeding",
+      "gens_per_year": 6,
+      "cycle_length_days": 60.83,
+      "speedup_vs_baseline": {
+        "min": 2.0,
+        "max": 3.0
+      },
+      "source": "Watson et al. 2018",
+      "doi": "10.1038/s41477-017-0083-8"
+    },
+    {
+      "crop": "canola",
+      "method": "controlled environment speed breeding",
+      "gens_per_year": 4,
+      "cycle_length_days": 91.25,
+      "speedup_vs_baseline": {
+        "min": 1.33,
+        "max": 2.0
+      },
+      "source": "Watson et al. 2018",
+      "doi": "10.1038/s41477-017-0083-8"
+    },
+    {
+      "crop": "canola",
+      "method": "embryo culture + soil (single pod)",
+      "gens_per_year": 7,
+      "cycle_length_days": 52.14,
+      "speedup_vs_baseline": {
+        "min": 2.33,
+        "max": 3.5
+      },
+      "source": "Yao et al. 2016",
+      "doi": "10.1007/s10681-016-1643-0"
+    }
+  ],
+  "notes": [
+    "Cycle length is computed as 365 / gens_per_year.",
+    "Speedup uses baseline of 2-3 generations per year from Watson et al. 2018.",
+    "Update speedup values if crop-specific baselines are available."
+  ]
+}
