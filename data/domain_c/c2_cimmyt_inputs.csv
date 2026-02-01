@@ -1,0 +1,3 @@
+program,period_start,period_end,crosses_per_year,years,progeny_per_cross,selection_cycles,released_varieties,data_quality,sources,notes
+CIMMYT wheat,1966,2000,6500,34,200,6,480,4,"Evenson & Gollin 2003; CIMMYT annual reports","Crosses per year and progeny per cross are period averages from C1 compilation."
+CIMMYT maize,1966,2000,4000,34,50,5,350,4,"Duvick 2005; CIMMYT reports","Crosses per year and progeny per cross are period averages from C1 compilation."
