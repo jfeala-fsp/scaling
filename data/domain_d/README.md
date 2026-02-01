@@ -9,6 +9,18 @@ and the number of successful designs are explicitly reported.
 - ml_guided_design_outcomes.csv: structured table of ML-guided design outcomes
 
 ## Extraction notes
+- MLD-2021-01 (PMC9293396, Nature 2021)
+  - "found that 27 folded to monodisperse species with circular dichroism spectra consistent with the hallucinated structures."
+  - 129 designs were experimentally tested; ESP uses 129 tested designs and 27 folded designs.
+
+- MLD-2023-01 (PMC10204179, Protein Sci 2023)
+  - "In vitro validation showed that 7 out of 39 designs were folded and stable in solution with high melting temperatures."
+  - ESP uses 39 tested designs and 7 folded, stable designs.
+
+- MLD-2024-01 (PMC11510650, Molecules 2024)
+  - "four selected generative sequences" were synthesized; Z1 and Z2 showed similar function to parental Protein A.
+  - ESP uses 4 tested sequences and 2 functional sequences (Z1, Z2).
+
 - MLD-2025-01 (PMC12704715, PNAS 2025)
   - "A total of 25 designs ... were manually selected" and "9 of these designs could be isolated by SEC".
   - "all 9 designs isolated by SEC bound to L9".
@@ -25,4 +37,3 @@ and the number of successful designs are explicitly reported.
 - Several pipelines involve in silico filtering before experimental characterization; the CSV
   uses the number of experimentally characterized designs as the ESP denominator.
 - Additional 2020-2024 ML-guided design outcomes should be added as sources are located.
-
