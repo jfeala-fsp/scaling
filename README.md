@@ -6,6 +6,10 @@ and medicine.
 
 The unified table lives at `data/master_esp_table.csv`.
 
+Phenotype complexity normalization is defined in `data/phenotype_complexity_score.md`,
+with assignments in `data/pcs_assignments.csv` and computed columns added by
+`src/analysis/master_esp_table.py`.
+
 ## Quality Score Rubric (1-5)
 
 - 5: Primary data with explicit denominators, direct counts, and clear endpoints.
