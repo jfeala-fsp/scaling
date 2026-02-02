@@ -24,6 +24,13 @@ clinical medicine domain (Task E1).
 - processed/fda_pivotal_trials.csv
   - Standardized pivotal trial outcomes with derived response rates and NNT.
 
+- processed/e4_gene_therapy_cart_outcomes.csv
+  - CAR-T and gene therapy outcomes with response rates and ESP values.
+  - Derived from FDA label efficacy sections via OpenFDA.
+
+- E4_gene_therapy_cart_notes.md
+  - Source notes and endpoint definitions for gene therapy and CAR-T outcomes.
+
 - results/tables/tbl_e1_nnt_summary_by_area.csv
   - Summary statistics (mean/median/min/max) by therapeutic area.
 
