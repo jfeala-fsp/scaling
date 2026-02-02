@@ -3,6 +3,7 @@ import re
 import urllib.request
 from html import unescape
 from pathlib import Path
+from typing import Optional
 
 import pandas as pd
 
@@ -76,6 +77,68 @@ def normalize_ascii(text: str) -> str:
     return text
 
 
+def duration_to_months(value: float, unit: str) -> float:
+    """Convert a duration to months using a 30-day month convention."""
+    unit = unit.lower()
+    if unit.startswith("day"):
+        return value / 30
+    if unit.startswith("week"):
+        return value * 7 / 30
+    if unit in {"mo", "mos"} or unit.startswith("month"):
+        return value
+    if unit in {"yr", "yrs"} or unit.startswith("year"):
+        return value * 12
+    if unit in {"h", "hr", "hrs"} or unit.startswith("hour"):
+        return value / 24 / 30
+    return value
+
+
+def parse_follow_up_months(text: str) -> Optional[float]:
+    """Extract follow-up duration from text and return months."""
+    if text is None:
+        return None
+    if not isinstance(text, str):
+        return None
+    if not text:
+        return None
+    cleaned = normalize_ascii(text).lower()
+    range_pattern = re.compile(
+        r"(\d+(?:\.\d+)?)\s*-\s*(\d+(?:\.\d+)?)\s*"
+        r"(day|days|week|weeks|month|months|year|years|yr|yrs|hour|hours|hr|hrs|h|mo|mos)\b"
+    )
+    single_pattern = re.compile(
+        r"(\d+(?:\.\d+)?)\s*"
+        r"(day|days|week|weeks|month|months|year|years|yr|yrs|hour|hours|hr|hrs|h|mo|mos)\b"
+    )
+    candidates = []
+    for match in range_pattern.finditer(cleaned):
+        upper = float(match.group(2))
+        unit = match.group(3)
+        candidates.append(duration_to_months(upper, unit))
+    for match in single_pattern.finditer(cleaned):
+        value = float(match.group(1))
+        unit = match.group(2)
+        candidates.append(duration_to_months(value, unit))
+    if not candidates:
+        return None
+    return max(candidates)
+
+
+def bucket_follow_up(months: Optional[float]) -> str:
+    """Bucket follow-up duration into standard time horizons."""
+    if months is None:
+        return "missing"
+    if months <= 1:
+        return "1mo"
+    if months <= 6:
+        return "6mo"
+    if months <= 12:
+        return "1yr"
+    if months <= 60:
+        return "5yr"
+    return "over_5yr"
+
+
 def main() -> None:
     """Extract NNT data from TheNNT pages listed in the raw pages CSV."""
     root = Path(__file__).resolve().parents[2]
@@ -98,6 +161,14 @@ def main() -> None:
 
         for nnt_type, label in (("benefit", "A"), ("harm", "B")):
             for entry in extract_rows(html, label):
+                follow_up_months = parse_follow_up_months(row["time_horizon"])
+                follow_up_source = "time_horizon" if follow_up_months is not None else ""
+                if follow_up_months is None:
+                    follow_up_months = parse_follow_up_months(entry["outcome_text"])
+                    if follow_up_months is not None:
+                        follow_up_source = "outcome_text"
+                follow_up_bucket = bucket_follow_up(follow_up_months)
+                follow_up_status = "missing" if follow_up_months is None else "clear"
                 rows.append(
                     {
                         "page_slug": slug,
@@ -112,6 +183,10 @@ def main() -> None:
                         "comparator": row["comparator"],
                         "therapeutic_area": row["therapeutic_area"],
                         "time_horizon": row["time_horizon"],
+                        "follow_up_months": follow_up_months,
+                        "follow_up_bucket": follow_up_bucket,
+                        "follow_up_status": follow_up_status,
+                        "follow_up_source": follow_up_source,
                         "notes": row["notes"],
                     }
                 )
@@ -129,6 +204,9 @@ def main() -> None:
     processed_df["source"] = "TheNNT"
     processed_df["source_url"] = processed_df["page_url"]
     processed_df["data_quality_score"] = 3
+    processed_df["follow_up_months"] = pd.to_numeric(
+        processed_df["follow_up_months"], errors="coerce"
+    ).round(2)
 
     ordered_cols = [
         "intervention",
@@ -136,6 +214,10 @@ def main() -> None:
         "comparator",
         "outcome",
         "time_horizon",
+        "follow_up_months",
+        "follow_up_bucket",
+        "follow_up_status",
+        "follow_up_source",
         "nnt",
         "nnt_ci",
         "nnt_type",

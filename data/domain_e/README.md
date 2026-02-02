@@ -20,6 +20,8 @@ clinical medicine domain (Task E1).
 - processed/nnt_database.csv
   - Standardized NNT database used for analysis.
   - Contains intervention, condition, comparator, outcome, NNT, and source.
+  - Includes follow_up_months (derived from time_horizon or outcome text),
+    follow_up_bucket (1mo/6mo/1yr/5yr/over_5yr/missing), and follow_up_status.
 
 - processed/fda_pivotal_trials.csv
   - Standardized pivotal trial outcomes with derived response rates and NNT.
@@ -40,6 +42,9 @@ clinical medicine domain (Task E1).
 
 - results/tables/tbl_e1_nnt_summary_by_area.csv
   - Summary statistics (mean/median/min/max) by therapeutic area.
+
+- results/tables/tbl_e1_nnt_summary_by_area_time.csv
+  - Summary statistics by therapeutic area and standardized follow-up period.
 
 - results/tables/tbl_e1_nnt_by_year.csv
   - Summary statistics by publication year (proxy time trend).
@@ -70,3 +75,7 @@ Notes
 - Time horizons and population details should be verified against primary
   sources cited by TheNNT. Rows needing verification are flagged with
   "[VERIFY]" in the notes column.
+- Follow-up durations are standardized to months using a 30-day month
+  convention. When time_horizon is blank, outcome text is scanned for
+  durations (e.g., "90 days"); entries without a parseable duration are
+  marked follow_up_status = missing.
