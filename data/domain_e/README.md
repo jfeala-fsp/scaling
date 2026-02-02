@@ -24,9 +24,16 @@ clinical medicine domain (Task E1).
 - processed/fda_pivotal_trials.csv
   - Standardized pivotal trial outcomes with derived response rates and NNT.
 
+- processed/e3_precision_medicine_trials.csv
+  - Precision-medicine trial outcomes with biomarker-matched response rates.
+  - Includes IMPACT, NCI-MATCH, and selected biomarker-drug pairs.
+
 - processed/e4_gene_therapy_cart_outcomes.csv
   - CAR-T and gene therapy outcomes with response rates and ESP values.
   - Derived from FDA label efficacy sections via OpenFDA.
+
+- E3_precision_medicine_trials.md
+  - Data notes, assumptions, and source list for Task E3.
 
 - E4_gene_therapy_cart_notes.md
   - Source notes and endpoint definitions for gene therapy and CAR-T outcomes.
