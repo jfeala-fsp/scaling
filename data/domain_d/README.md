@@ -25,17 +25,32 @@ and the number of successful designs are explicitly reported.
   - ESP uses 10,000 clones and 1 final DepoPETase variant as success (reported in a summary citation).
 
 ### ML-guided protein design
+- MLD-2020-01 (bioRxiv 2020)
+  - "129 hallucinated sequences ... selected for experimental testing" and "27 folded to monomeric stable structures."
+  - Preprint version of the 2021 Nature study; avoid double counting if aggregating.
 - MLD-2021-01 (PMC9293396, Nature 2021)
   - "found that 27 folded to monodisperse species with circular dichroism spectra consistent with the hallucinated structures."
   - 129 designs were experimentally tested; ESP uses 129 tested designs and 27 folded designs.
+
+- MLD-2022-01 (PMC9621694, Science 2022)
+  - "We expressed 37 hallucinated RSV-F site V scaffolds ... and found that three bound the neutralizing antibody hRSV90."
+  - ESP uses 37 tested scaffolds and 3 binding designs.
 
 - MLD-2023-01 (PMC10204179, Protein Sci 2023)
   - "In vitro validation showed that 7 out of 39 designs were folded and stable in solution with high melting temperatures."
   - ESP uses 39 tested designs and 7 folded, stable designs.
 
+- MLD-2023-02 (PMC10089152, PNAS 2023)
+  - "71 were selected for experimental characterization ... 28 ... monomers by SEC."
+  - ESP uses 71 tested designs and 28 monomeric designs by SEC.
+
 - MLD-2024-01 (PMC11510650, Molecules 2024)
   - "four selected generative sequences" were synthesized; Z1 and Z2 showed similar function to parental Protein A.
   - ESP uses 4 tested sequences and 2 functional sequences (Z1, Z2).
+
+- MLD-2024-02 (PMC11081422, Protein Sci 2024)
+  - "six designs were selected for experimental characterization" and all were soluble; five showed monomeric SEC-MALS peaks.
+  - ESP uses 6 tested designs and 5 monomeric designs.
 
 - MLD-2025-01 (PMC12704715, PNAS 2025)
   - "A total of 25 designs ... were manually selected" and "9 of these designs could be isolated by SEC".
