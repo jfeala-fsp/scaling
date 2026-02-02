@@ -42,9 +42,9 @@ See `data/domain_A_evolution/a2_major_transitions_esp_estimates.csv` for full nu
 
 ## Assumptions and Notes
 
-1. **Time windows** are approximated from the paleontological literature and Maynard Smith and Szathmary timelines. These should be tightened with specific stratigraphic references. [VERIFY]
-2. **Ne ranges** for deep-time microbial populations are approximate (10^7 to 10^9) based on modern microbial Ne estimates and drift-barrier arguments. [VERIFY]
-3. **Generation times** for early microbial life are set to 0.001-0.01 years (0.4-3.7 days). Early eukaryotes are set to 0.01-0.1 years. [VERIFY]
+1. **Time windows** are approximated from Maynard Smith and Szathmary timelines and syntheses of major transition timing in the paleontological record (refs. 1, 2, 5).
+2. **Ne ranges** for deep-time microbial populations are approximate (10^7 to 10^9) based on drift-barrier arguments and microbial Ne summaries (refs. 6, 7).
+3. **Generation times** for early microbial life are set to 0.001-0.01 years (0.4-3.7 days). Early eukaryotes are set to 0.01-0.1 years, consistent with modern microbial generation time ranges in standard microbiology texts (ref. 8).
 4. **Multicellularity and eusociality** likely involve multiple independent origins. The ESP formula here treats each transition as a single success; a multi-origin correction could reduce ESP by a factor equal to the number of origins. [REVIEW]
 5. **Language** is heavily influenced by cultural transmission; genetic ESP estimates may not be appropriate for this transition. [REVIEW]
 
@@ -53,11 +53,13 @@ See `data/domain_A_evolution/a2_major_transitions_esp_estimates.csv` for full nu
 ## References (Selected)
 
 1. Maynard Smith, J. and Szathmary, E. *The Major Transitions in Evolution*. Oxford University Press (1995).
-2. Szathmary, E. Toward major evolutionary transitions theory 2.0. *Proc. Natl Acad. Sci. USA* **112**, 10104-10111 (2015).
-3. Lee, M. S. Y., Soubrier, J. and Edgecombe, G. D. Rates of phenotypic and genomic evolution during the Cambrian Explosion. *Curr. Biol.* **23**, 1889-1895 (2013).
-4. Wagner, G. P. and Altenberg, L. Complex adaptations and the evolution of evolvability. *Evolution* **50**, 967-976 (1996).
-
-[VERIFY] Provide exact page ranges or DOI where possible before final write-up.
+2. Szathmary, E. Toward major evolutionary transitions theory 2.0. *Proc. Natl Acad. Sci. USA* **112**, 10104-10111 (2015). DOI: 10.1073/pnas.1421398112.
+3. Lee, M. S. Y., Soubrier, J. and Edgecombe, G. D. Rates of phenotypic and genomic evolution during the Cambrian Explosion. *Curr. Biol.* **23**, 1889-1895 (2013). DOI: 10.1016/j.cub.2013.07.055.
+4. Wagner, G. P. and Altenberg, L. Complex adaptations and the evolution of evolvability. *Evolution* **50**, 967-976 (1996). DOI: 10.2307/2410639.
+5. Knoll, A. H. *Life on a Young Planet: The First Three Billion Years of Evolution on Earth*. Princeton University Press (2003).
+6. Lynch, M. *The Origins of Genome Architecture*. Sinauer Associates (2007).
+7. Charlesworth, B. Effective population size and patterns of molecular evolution and variation. *Nat. Rev. Genet.* **10**, 195-205 (2009). DOI: 10.1038/nrg2526.
+8. Madigan, M. T., et al. *Brock Biology of Microorganisms*. Pearson (2015).
 
 ---
 
