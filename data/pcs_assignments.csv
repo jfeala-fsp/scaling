@@ -1,0 +1,8 @@
+Domain,Subdomain_pattern,PCS_level,PCS_score,PCS_method,PCS_notes
+Evolution,^Major transition:,7,64,rubric,Major transitions in biological organization.
+Evolution,^Mutation rate baseline:,1,1,baseline,"Mutation-rate baselines are not phenotype outcomes; PCS set to 1 for normalization."
+Domestication,^Domestication:,3,4,rubric,"Domestication syndrome typically involves multiple coordinated traits."
+Breeding,.*,1,1,rubric,"Single quantitative trait shifts (e.g., yield) dominate program targets."
+Protein engineering,Directed evolution,4,8,rubric,"Novel or repurposed protein function using existing parts."
+Protein engineering,ML-guided protein design,4,8,rubric,"Novel or repurposed protein function using existing parts."
+Medicine,.*,2,2,rubric,"Single qualitative therapeutic response (binary clinical endpoint)."

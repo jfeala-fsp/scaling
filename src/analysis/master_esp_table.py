@@ -18,6 +18,7 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
+PCS_ASSIGNMENTS_PATH = ROOT / "data/pcs_assignments.csv"
 
 
 def _log10(value: float) -> float:
@@ -41,6 +42,81 @@ def _format_sources(refs: Iterable[Dict[str, Any]], max_items: int = 3) -> str:
 def _extract_year(text: str) -> str:
     match = re.search(r"(19|20)\d{2}", text or "")
     return match.group(0) if match else "unknown"
+
+
+def _load_pcs_assignments() -> List[Dict[str, Any]]:
+    if not PCS_ASSIGNMENTS_PATH.exists():
+        raise FileNotFoundError(f"Missing PCS assignments: {PCS_ASSIGNMENTS_PATH}")
+    df = pd.read_csv(PCS_ASSIGNMENTS_PATH)
+    assignments: List[Dict[str, Any]] = []
+    for _, row in df.iterrows():
+        domain = str(row.get("Domain", "")).strip()
+        pattern = str(row.get("Subdomain_pattern", "")).strip()
+        if not domain or not pattern:
+            continue
+        assignments.append(
+            {
+                "domain": domain,
+                "pattern": re.compile(pattern),
+                "pcs_level": int(row.get("PCS_level")),
+                "pcs_score": float(row.get("PCS_score")),
+                "pcs_method": str(row.get("PCS_method", "")).strip() or "rubric",
+                "pcs_notes": str(row.get("PCS_notes", "")).strip() or None,
+            }
+        )
+    return assignments
+
+
+def _match_pcs(domain: str, subdomain: str, assignments: List[Dict[str, Any]]) -> Dict[str, Any] | None:
+    for assignment in assignments:
+        assignment_domain = assignment["domain"]
+        if assignment_domain not in {"*", "ANY", "Any", "any"} and assignment_domain != domain:
+            continue
+        if assignment["pattern"].search(subdomain):
+            return assignment
+    return None
+
+
+def _apply_pcs_assignments(df: pd.DataFrame) -> pd.DataFrame:
+    assignments = _load_pcs_assignments()
+    pcs_levels: List[int | None] = []
+    pcs_scores: List[float | None] = []
+    pcs_methods: List[str | None] = []
+    pcs_notes: List[str | None] = []
+    esp_normalized: List[float | None] = []
+    log10_esp_normalized: List[float | None] = []
+
+    for _, row in df.iterrows():
+        match = _match_pcs(str(row["Domain"]), str(row["Subdomain"]), assignments)
+        if match is None:
+            pcs_levels.append(None)
+            pcs_scores.append(None)
+            pcs_methods.append(None)
+            pcs_notes.append(None)
+            esp_normalized.append(None)
+            log10_esp_normalized.append(None)
+            continue
+        pcs_score = float(match["pcs_score"])
+        pcs_levels.append(int(match["pcs_level"]))
+        pcs_scores.append(pcs_score)
+        pcs_methods.append(match["pcs_method"])
+        pcs_notes.append(match["pcs_notes"])
+        if pcs_score > 0:
+            esp_norm = float(row["ESP"]) / pcs_score
+            esp_normalized.append(esp_norm)
+            log10_esp_normalized.append(_log10(esp_norm))
+        else:
+            esp_normalized.append(None)
+            log10_esp_normalized.append(None)
+
+    return df.assign(
+        PCS_level=pcs_levels,
+        PCS_score=pcs_scores,
+        PCS_method=pcs_methods,
+        PCS_notes=pcs_notes,
+        ESP_normalized=esp_normalized,
+        log10_ESP_normalized=log10_esp_normalized,
+    )
 
 
 def _rows_domain_a_major_transitions() -> List[Dict[str, Any]]:
@@ -331,6 +407,7 @@ def build_master_table() -> pd.DataFrame:
     rows.extend(_rows_domain_d_protein_engineering())
     rows.extend(_rows_domain_e_medicine())
     df = pd.DataFrame(rows)
+    df = _apply_pcs_assignments(df)
     df = df[
         [
             "Domain",
@@ -338,6 +415,12 @@ def build_master_table() -> pd.DataFrame:
             "Time_period",
             "ESP",
             "log10_ESP",
+            "PCS_level",
+            "PCS_score",
+            "PCS_method",
+            "PCS_notes",
+            "ESP_normalized",
+            "log10_ESP_normalized",
             "Quality_score",
             "Source",
         ]
