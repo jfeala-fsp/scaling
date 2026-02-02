@@ -34,6 +34,8 @@ ESP calculations for the transition from natural to artificial selection (~10,00
 ## Data Files
 
 - `domestication_data.json` - Full structured data with all parameters and references
+- `B1_domestication_timeline_compilation.md` - Timeline summary with population sizes and trait fixation highlights
+- `domestication_timeline_compilation.csv` - Machine-readable timeline summary for analysis
 
 ## Key References
 
