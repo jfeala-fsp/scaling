@@ -1,0 +1,6 @@
+therapeutic_area,n_entries,n_unique_interventions,nnt_mean,nnt_median,nnt_min,nnt_max,year_min,year_max
+cardiovascular,16,4,729.31,185.5,10,3333,2013,2017
+diabetes/metabolic,17,2,118.24,71.0,6,500,2024,2024
+infectious disease,9,3,20.22,17.0,5,56,2024,2025
+neurological,5,2,10.0,7.0,5,20,2019,2025
+oncology,5,3,76.2,60.0,5,219,2015,2019
