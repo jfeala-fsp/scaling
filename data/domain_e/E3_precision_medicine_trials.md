@@ -12,8 +12,9 @@ biomarker-drug pairs requested in the research plan. The primary output is:
 - `experiments_tested` and `successes` reflect matched cohorts when reported.
 - `response_rate_matched` is recorded as a proportion (0-1).
 - `effective_nnt` and `esp` are computed as `1 / response_rate_matched`.
-- Rows flagged with `[VERIFY]` require confirmation of exact denominators or
-  subgroup response rates from the primary trial tables.
+- Objective response rates and denominators are pulled from primary trial
+  abstracts or ClinicalTrials.gov results tables when subgroup counts are
+  not stated in the abstract.
 
 ## Sources (Primary, Open Access)
 1. Tsimberidou AM, et al. Long-term overall survival and prognostic score
@@ -30,14 +31,22 @@ biomarker-drug pairs requested in the research plan. The primary output is:
    DOI: 10.1056/NEJMoa1714448.
    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5857389/
 
-## Sources (Require Verification)
-- KEYNOTE-158 MSI-H/dMMR pooled analysis (Pembrolizumab).
-- Slamon et al. 2001 HER2+ metastatic breast cancer trial (Trastuzumab).
-- IPASS EGFR-mutant NSCLC subgroup (Gefitinib).
-- PROFILE 1001 ALK+ NSCLC (Crizotinib).
-- BRIM-3 BRAF V600E melanoma (Vemurafenib).
-- IRIS chronic-phase CML (Imatinib).
-- KEYNOTE-024 PD-L1 high NSCLC (Pembrolizumab).
+## Sources (Additional, Open Access)
+4. Marabelle A, et al. Pembrolizumab in patients with MSI-H/dMMR cancers
+   (KEYNOTE-158). *J Clin Oncol* **38**, 1-10 (2020).
+   DOI: 10.1200/JCO.19.02652. PMID: 31682550.
+5. Slamon DJ, et al. Use of chemotherapy plus a monoclonal antibody against
+   HER2 for metastatic breast cancer. *N Engl J Med* **344**, 783-792 (2001).
+   DOI: 10.1056/NEJM200103153441101. PMID: 11248153.
+6. O'Brien SG, et al. Imatinib compared with interferon and low-dose cytarabine
+   for newly diagnosed chronic-phase chronic myeloid leukemia. *N Engl J Med*
+   **348**, 994-1004 (2003). DOI: 10.1056/NEJMoa021119. PMID: 12637609.
 
-These rows are flagged `[VERIFY]` in the dataset and should be updated with
-exact subgroup denominators and response rates from the primary trial tables.
+## Sources (ClinicalTrials.gov Results Tables)
+- NCT00322452 (IPASS): Objective tumor response rate by RECIST (ITT population).
+- NCT00585195 (PROFILE 1001): RP2D ALK-positive NSCLC cohort ORR.
+- NCT01006980 (BRIM-3): Best overall response counts by arm.
+- NCT02142738 (KEYNOTE-024): Objective response rate by arm.
+
+ClinicalTrials.gov results tables are cited where the peer-reviewed abstract
+does not list subgroup denominators or response counts.
