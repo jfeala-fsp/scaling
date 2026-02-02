@@ -18,7 +18,7 @@ ESP_breeding = (Crosses × Progeny per cross × Selection cycles)
 
 ## Inputs and Assumptions
 
-Inputs are period averages compiled in C1 (see `/Users/jfeala/gt/scaling/scaling/crew/louis/data/C1_breeding_programs.md`).
+Inputs are period averages compiled in C1 (see `data/domain_c/C1_breeding_programs.md`).
 - Crosses per year and progeny per cross are averaged across eras for 1966-2000.
 - Selection cycles are program-average counts per release.
 - Released variety counts use CIMMYT program summaries (named varieties).
