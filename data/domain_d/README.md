@@ -11,6 +11,22 @@ and the number of successful designs are explicitly reported.
 
 ## Extraction notes
 ### Directed evolution
+- DE-1994-01 (Nature 1994, PMID 8047147)
+  - "Three cycles of shuffling and two cycles of backcrossing ... followed by selection on increasing concentrations of the antibiotic cefotaxime."
+  - Library size and hit counts are not reported in the abstract; current ESP uses a placeholder of 1,000,000 transformants and 1 lead variant pending full-text verification. [VERIFY]
+
+- DE-1999-01 (Protein Eng 1999, PMID 10065710)
+  - "Five generations of random mutagenesis, recombination and screening created subtilisin E 5-3H5."
+  - Library size and hit counts are not reported in the abstract; current ESP uses a placeholder of 10,000 clones and 1 lead variant pending full-text verification. [VERIFY]
+
+- DE-2001-01 (Adv Synth Catal 2001, DOI 10.1002/1615-4169(200108)343:6/7<601::AID-ADSC601>3.0.CO;2-9)
+  - Directed evolution of P450 BM-3 for alkane oxidation.
+  - Library size and hit counts are not reported in the abstract; current ESP uses a placeholder of 10,000 screened variants and 1 lead variant pending full-text verification. [VERIFY]
+
+- DE-2005-01 (Biochemistry 2005, DOI 10.1021/bi0475471)
+  - Directed evolution of carbonic anhydrase II using a promiscuous esterase activity screen.
+  - Library size and hit counts are not reported in the abstract; current ESP uses a placeholder of 5,000 screened variants and 1 lead variant pending full-text verification. [VERIFY]
+
 - DE-2025-01 (PMC12514840, Protein Sci 2025)
   - "Approximately 5 x 10^5 clones were screened at each temperature, and three blaC clones were found on the plate incubated at 30C."
   - ESP uses 500,000 screened clones and 3 blaC clones as successes.
