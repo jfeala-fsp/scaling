@@ -1,0 +1,9 @@
+domain,model,target_esp,target_log10_esp,projected_year
+Breeding,exponential,10.0,1.0,2740.7797174954558
+Breeding,exponential,1.0,0.0,2912.4972975311657
+Evolution,exponential,10.0,1.0,411541476.8693628
+Evolution,exponential,1.0,0.0,450858545.979543
+Medicine,exponential,10.0,1.0,1690.6198314552037
+Medicine,exponential,1.0,0.0,1056.6667471500118
+Protein engineering,exponential,10.0,1.0,2022.389290936459
+Protein engineering,exponential,1.0,0.0,2020.5290828409063

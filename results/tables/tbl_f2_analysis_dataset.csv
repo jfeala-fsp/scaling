@@ -1,0 +1,93 @@
+Domain,Subdomain,Time_period,ESP,log10_ESP,Quality_score,Source,year,time_note
+Breeding,US soybean (public programs),1960-2000,1800000.0,6.2552725051033065,3,Specht & Williams 1984; Wilcox 2001; Rincker et al. 2014,1980.0,ok
+Breeding,CIMMYT wheat,1966-2000,552500.0,5.7423322823571485,4,Evenson & Gollin 2003; CIMMYT annual reports,1983.0,ok
+Breeding,CIMMYT maize,1966-2000,97142.85714285714,4.98741087269198,4,Duvick 2005; CIMMYT reports,1983.0,ok
+Breeding,US dairy cattle,1970-2000,36000.0,4.556302500767287,5,VanRaden 2004; Shook 2006; USDA AIPL,1985.0,ok
+Breeding,Speed breeding (wheat; embryo culture + optimized environment),2013,165667.16641679162,5.21923644410458,3,Zheng et al. 2013; 10.1007/s10681-013-0909-z,2013.0,ok
+Breeding,Speed breeding (wheat; controlled environment speed breeding),2018,221000.0,5.344392273685111,3,Watson et al. 2018; 10.1038/s41477-017-0083-8,2018.0,ok
+Domestication,Domestication: wheat,10500 BP,8100000.0,6.9084850188786495,4,"Purugganan MD, Fuller DQ 2009; Allaby RG et al. 2017; Thuillet AC et al. 2005",-8550.0,ok
+Domestication,Domestication: maize,9000 BP,1500000.0,6.176091259055681,4,Matsuoka Y et al. 2002; Eyre-Walker A et al. 1998; Tenaillon MI et al. 2004,-7050.0,ok
+Domestication,Domestication: dogs,27-40 kya,33000.0,4.518513939877887,4,"Larson G, Fuller DQ 2014; Freedman AH et al. 2014; Trut L et al. 2009",8450.0,ok
+Evolution,Major transition: Sex (asexual to sexual),~1.8-1.2 Ga,3.7583740428844664e+16,16.575000000000003,2,Maynard Smith & Szathmary 1995; A2 major transitions,-299998050.00000006,ok
+Evolution,Major transition: Origin of life (chemistry to biology),~4.0-3.5 Ga,1e+19,19.0,2,Maynard Smith & Szathmary 1995; A2 major transitions,-249998050.0,ok
+Evolution,Major transition: Genetic code (RNA to DNA/protein),~3.8-3.3 Ga,1.7378008287493837e+19,19.240000000000002,2,Maynard Smith & Szathmary 1995; A2 major transitions,-249998050.0,ok
+Evolution,Major transition: Eukaryotes (endosymbiosis),~2.0-1.5 Ga,4.897788193684436e+16,16.689999999999998,2,Maynard Smith & Szathmary 1995; A2 major transitions,-249998050.0,ok
+Evolution,Major transition: Multicellularity (unicellular to multicellular),~1.0-0.6 Ga,3162277660168379.5,15.5,2,Maynard Smith & Szathmary 1995; A2 major transitions,-199998050.0,ok
+Evolution,Major transition: Chromosomes (free genes to linked genes),~3.8-3.4 Ga,1.7378008287493837e+19,19.240000000000002,2,Maynard Smith & Szathmary 1995; A2 major transitions,-199998049.99999997,ok
+Evolution,Major transition: Eusociality (solitary to social),~150-100 Ma,630957344480194.2,14.8,2,Maynard Smith & Szathmary 1995; A2 major transitions,-24998050.0,ok
+Evolution,Major transition: Language (primate to human),~0.2-0.05 Ma,162181009.73589265,8.209999999999999,2,Maynard Smith & Szathmary 1995; A2 major transitions,-73050.00000000001,ok
+Medicine,FDA pivotal trials,1998,14.802153432032302,1.170324901585285,4,https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/492dbdb2-077e-4064-bff3-372d6af0a7a2.xml,1998.0,ok
+Medicine,FDA pivotal trials,2001,2.502262443438914,0.39833285761958753,4,https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/211ef2da-2868-4a77-8055-1cb2cd78e24b.xml,2001.0,ok
+Medicine,NNT (TheNNT),2013,60.0,1.7781512503836436,3,https://thennt.com/nnt/warfarin-vs-aspirin-for-atrial-fibrillation-stroke-prevention/,2013.0,ok
+Medicine,NNT (TheNNT),2013,360.0,2.5563025007672873,3,https://thennt.com/nnt/warfarin-vs-aspirin-for-atrial-fibrillation-stroke-prevention/,2013.0,ok
+Medicine,NNT (TheNNT),2013,167.0,2.2227164711475833,3,https://thennt.com/nnt/warfarin-vs-aspirin-for-atrial-fibrillation-stroke-prevention/,2013.0,ok
+Medicine,NNT (TheNNT),2013,25.0,1.3979400086720377,3,https://thennt.com/nnt/warfarin-vs-aspirin-for-atrial-fibrillation-stroke-prevention/,2013.0,ok
+Medicine,FDA pivotal trials,2013,1.0792079207920793,0.033105124157981086,4,https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/80beab2c-396e-4a37-a4dc-40fdb62859cf.xml,2013.0,ok
+Medicine,NNT (TheNNT),2014,125.0,2.0969100130080562,3,https://thennt.com/nnt/anti-hypertensives-to-prevent-death-heart-attacks-and-strokes/,2014.0,ok
+Medicine,NNT (TheNNT),2014,67.0,1.8260748027008264,3,https://thennt.com/nnt/anti-hypertensives-to-prevent-death-heart-attacks-and-strokes/,2014.0,ok
+Medicine,NNT (TheNNT),2014,100.0,2.0,3,https://thennt.com/nnt/anti-hypertensives-to-prevent-death-heart-attacks-and-strokes/,2014.0,ok
+Medicine,NNT (TheNNT),2014,10.0,1.0,3,https://thennt.com/nnt/anti-hypertensives-to-prevent-death-heart-attacks-and-strokes/,2014.0,ok
+Medicine,NNT (TheNNT),2015,1667.0,3.2219355998280053,3,https://thennt.com/nnt/aspirin-to-prevent-a-first-heart-attack-or-stroke-2/,2015.0,ok
+Medicine,NNT (TheNNT),2015,2000.0,3.3010299956639813,3,https://thennt.com/nnt/aspirin-to-prevent-a-first-heart-attack-or-stroke-2/,2015.0,ok
+Medicine,NNT (TheNNT),2015,3000.0,3.4771212547196626,3,https://thennt.com/nnt/aspirin-to-prevent-a-first-heart-attack-or-stroke-2/,2015.0,ok
+Medicine,NNT (TheNNT),2015,3333.0,3.52283531366053,3,https://thennt.com/nnt/aspirin-to-prevent-a-first-heart-attack-or-stroke-2/,2015.0,ok
+Medicine,NNT (TheNNT),2015,5.0,0.6989700043360189,3,https://thennt.com/nnt/psa-test-to-screen-for-prostate-cancer-2/,2015.0,ok
+Medicine,NNT (TheNNT),2017,217.0,2.3364597338485296,3,https://thennt.com/nnt/statins-persons-low-risk-cardiovascular-disease/,2017.0,ok
+Medicine,NNT (TheNNT),2017,313.0,2.4955443375464483,3,https://thennt.com/nnt/statins-persons-low-risk-cardiovascular-disease/,2017.0,ok
+Medicine,NNT (TheNNT),2017,21.0,1.3222192947339193,3,https://thennt.com/nnt/statins-persons-low-risk-cardiovascular-disease/,2017.0,ok
+Medicine,NNT (TheNNT),2017,204.0,2.3096301674258988,3,https://thennt.com/nnt/statins-persons-low-risk-cardiovascular-disease/,2017.0,ok
+Medicine,FDA pivotal trials,2017,1.2115384615384617,0.0833372058187826,4,https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/aad3ba54-dfd3-4cb3-9e2b-c5ef89559189.xml,2017.0,ok
+Medicine,FDA pivotal trials,2017,1.3835616438356164,0.14099851366218666,4,https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/9b70606e-b99c-4272-a0f1-b5523cce0c59.xml,2017.0,ok
+Medicine,Gene therapy/CAR-T,2017,1.2115384615384617,0.0833372058187826,5,https://api.fda.gov/drug/label.json?search=openfda.brand_name:Kymriah&limit=1,2017.0,ok
+Medicine,Gene therapy/CAR-T,2017,1.9423076923076923,0.2883180301478434,5,https://api.fda.gov/drug/label.json?search=openfda.brand_name:Yescarta&limit=1,2017.0,ok
+Medicine,Gene therapy/CAR-T,2017,1.9090909090909092,0.2808266095756942,5,https://api.fda.gov/drug/label.json?search=openfda.brand_name:Luxturna&limit=1,2017.0,ok
+Medicine,NNT (TheNNT),2018,60.0,1.7781512503836436,3,https://thennt.com/nnt/hpv-vaccines-prevention-cervical-pre-cancer-adolescent-girls-women/,2018.0,ok
+Medicine,FDA pivotal trials,2018,1.6666666666666667,0.2218487496163564,3,https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/0c8ca614-58b2-4aa4-83d3-0387a8f782fd.xml,2018.0,ok
+Medicine,NNT (TheNNT),2019,219.0,2.3404441148401185,3,https://thennt.com/nnt/low-dose-ct-scan-lung-cancer-screening/,2019.0,ok
+Medicine,NNT (TheNNT),2019,19.0,1.2787536009528289,3,https://thennt.com/nnt/low-dose-ct-scan-lung-cancer-screening/,2019.0,ok
+Medicine,NNT (TheNNT),2019,78.0,1.8920946026904804,3,https://thennt.com/nnt/low-dose-ct-scan-lung-cancer-screening/,2019.0,ok
+Medicine,NNT (TheNNT),2019,5.0,0.6989700043360189,3,https://thennt.com/nnt/early-endovascular-thrombectomy-large-vessel-ischemic-stroke-reduces-disability-90-days/,2019.0,ok
+Medicine,Gene therapy/CAR-T,2019,1.105263157894737,0.043465693781090345,5,https://api.fda.gov/drug/label.json?search=openfda.brand_name:Zolgensma&limit=1,2019.0,ok
+Medicine,NNT (TheNNT),2024,5.0,0.6989700043360189,3,https://thennt.com/nnt/paxlovid-for-nonhospitalized-patients-with-covid-19/,2024.0,ok
+Medicine,NNT (TheNNT),2024,25.0,1.3979400086720377,3,https://thennt.com/nnt/paxlovid-for-nonhospitalized-patients-with-covid-19/,2024.0,ok
+Medicine,NNT (TheNNT),2024,16.0,1.2041199826559248,3,https://thennt.com/nnt/cranberry-products-for-preventing-urinary-tract-infections/,2024.0,ok
+Medicine,NNT (TheNNT),2024,8.0,0.9030899869919435,3,https://thennt.com/nnt/cranberry-products-for-preventing-urinary-tract-infections/,2024.0,ok
+Medicine,NNT (TheNNT),2024,9.0,0.9542425094393249,3,https://thennt.com/nnt/cranberry-products-for-preventing-urinary-tract-infections/,2024.0,ok
+Medicine,NNT (TheNNT),2024,38.0,1.5797835966168101,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,100.0,2.0,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,71.0,1.8512583487190752,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,143.0,2.155336037465062,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,40.0,1.6020599913279623,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,333.0,2.5224442335063197,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,59.0,1.7708520116421442,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,125.0,2.0969100130080562,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,111.0,2.0453229787866576,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,250.0,2.3979400086720375,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,59.0,1.7708520116421442,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,111.0,2.0453229787866576,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,40.0,1.6020599913279623,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,500.0,2.6989700043360187,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,7.0,0.8450980400142568,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,17.0,1.2304489213782739,3,https://thennt.com/nnt/sglt-2-inhibitors-and-glp-1-receptor-agonists-for-type-2-diabetes/,2024.0,ok
+Medicine,NNT (TheNNT),2024,6.0,0.7781512503836436,3,https://thennt.com/nnt/metformin-for-type-2-diabetes-mellitus/,2024.0,ok
+Medicine,NNT (TheNNT),2025,18.0,1.255272505103306,3,https://thennt.com/nnt/corticosteroids-for-community-acquired-bacterial-pneumonia/,2025.0,ok
+Medicine,NNT (TheNNT),2025,28.0,1.4471580313422192,3,https://thennt.com/nnt/corticosteroids-for-community-acquired-bacterial-pneumonia/,2025.0,ok
+Medicine,NNT (TheNNT),2025,56.0,1.7481880270062005,3,https://thennt.com/nnt/corticosteroids-for-community-acquired-bacterial-pneumonia/,2025.0,ok
+Medicine,NNT (TheNNT),2025,17.0,1.2304489213782739,3,https://thennt.com/nnt/corticosteroids-for-community-acquired-bacterial-pneumonia/,2025.0,ok
+Medicine,NNT (TheNNT),2025,7.0,0.8450980400142568,3,https://thennt.com/nnt/endovascular-therapy-for-acute-vertebrobasilar-occlusion-stroke/,2025.0,ok
+Medicine,NNT (TheNNT),2025,7.0,0.8450980400142568,3,https://thennt.com/nnt/endovascular-therapy-for-acute-vertebrobasilar-occlusion-stroke/,2025.0,ok
+Medicine,NNT (TheNNT),2025,11.0,1.0413926851582251,3,https://thennt.com/nnt/endovascular-therapy-for-acute-vertebrobasilar-occlusion-stroke/,2025.0,ok
+Medicine,NNT (TheNNT),2025,20.0,1.3010299956639813,3,https://thennt.com/nnt/endovascular-therapy-for-acute-vertebrobasilar-occlusion-stroke/,2025.0,ok
+Protein engineering,ML-guided protein design,2020,4.777777777777778,0.6792259461402617,3,10.1101/2020.07.22.211482,2020.0,ok
+Protein engineering,ML-guided protein design,2021,4.777777777777778,0.6792259461402617,4,10.1038/s41586-021-04184-w,2021.0,ok
+Protein engineering,ML-guided protein design,2022,12.333333333333334,1.0910804693473326,4,10.1126/science.abn2100,2022.0,ok
+Protein engineering,ML-guided protein design,2023,5.571428571428571,0.7459665670122424,4,10.1002/pro.4653,2023.0,ok
+Protein engineering,ML-guided protein design,2023,2.5357142857142856,0.40410031737685603,4,10.1073/pnas.2207974120,2023.0,ok
+Protein engineering,ML-guided protein design,2024,2.0,0.3010299956639812,3,10.3390/molecules29204965,2024.0,ok
+Protein engineering,ML-guided protein design,2024,1.2,0.07918124604762482,4,10.1002/pro.5001,2024.0,ok
+Protein engineering,Directed evolution,2025,166666.66666666666,5.221848749616356,4,10.1002/pro.70322,2025.0,ok
+Protein engineering,Directed evolution,2025,16666666.666666666,7.221848749616356,4,10.1021/acssynbio.5c00425,2025.0,ok
+Protein engineering,ML-guided protein design,2025,2.7777777777777777,0.44369749923271273,4,10.1073/pnas.2512358122,2025.0,ok
+Protein engineering,ML-guided protein design,2025,14.666666666666666,1.166331421766525,4,10.1073/pnas.2409566122,2025.0,ok
+Protein engineering,ML-guided protein design,2025,1.181818181818182,0.07255066714861183,4,10.1073/pnas.2409566122,2025.0,ok
+Protein engineering,Directed evolution,2026,10000.0,4.0,3,10.1016/j.synbio.2025.10.001,2026.0,ok
