@@ -1,14 +1,30 @@
-# Domain D: ML-guided protein design outcomes (2020-present)
+# Domain D: Molecular biotechnology outcomes
 
 ## Scope
-This folder tracks ML-guided protein design success rates and derived ESP values.
+This folder tracks molecular biotechnology success rates and derived ESP values.
 Entries focus on experimental validation outcomes where the number of designs tested
 and the number of successful designs are explicitly reported.
 
 ## Files
+- directed_evolution_outcomes.csv: structured table of directed evolution outcomes
 - ml_guided_design_outcomes.csv: structured table of ML-guided design outcomes
 
 ## Extraction notes
+### Directed evolution
+- DE-2025-01 (PMC12514840, Protein Sci 2025)
+  - "Approximately 5 x 10^5 clones were screened at each temperature, and three blaC clones were found on the plate incubated at 30C."
+  - ESP uses 500,000 screened clones and 3 blaC clones as successes.
+
+- DE-2025-02 (PMC12723733, ACS Synth Biol 2025)
+  - "This library, consisting of over 1 x 10^8 unique clones..."
+  - "identified six unique scFv clones ... exhibiting specific binding in the final round."
+  - ESP uses 100,000,000 library size and 6 binding clones as successes.
+
+- DE-2026-01 (PMC12657606, Synth Syst Biotechnol 2026)
+  - "screened over 10,000 clones through three rounds of directed evolution and developed DepoPETase."
+  - ESP uses 10,000 clones and 1 final DepoPETase variant as success (reported in a summary citation).
+
+### ML-guided protein design
 - MLD-2021-01 (PMC9293396, Nature 2021)
   - "found that 27 folded to monodisperse species with circular dichroism spectra consistent with the hallucinated structures."
   - 129 designs were experimentally tested; ESP uses 129 tested designs and 27 folded designs.
